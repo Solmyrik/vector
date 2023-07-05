@@ -1,0 +1,39 @@
+@import '_null.scss';
+@import '_mixin';
+@import '_popup';
+.wrapper {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+html {
+  &.lock {
+    overflow: hidden;
+  }
+}
+body {
+  color: $black;
+  font-size: 20px;
+  font-family: 'TT Norms Pro';
+  font-weight: 400;
+  font-style: normal;
+  &._lock {
+    overflow: hidden;
+  }
+  &.lock {
+    overflow: hidden;
+  }
+}
+main {
+  flex: 100%;
+}
+
+[class*='__container'] {
+  max-width: 1310px;
+  margin: 0 auto;
+  padding: 0px 15px;
+  @media (max-width: 375px) {
+    padding: 0px 10px;
+  }
+}

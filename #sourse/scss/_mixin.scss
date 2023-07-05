@@ -1,0 +1,28 @@
+html {
+  scroll-behavior: smooth;
+}
+// resolution
+$pc: 1310px;
+$tablet: 991.98px;
+$mob: 767.98px;
+$mobSmall: 479.98px;
+
+//colors
+$purple: #391085;
+$white: #ffffff;
+$black: #262626;
+
+$gray: #a5a19e;
+$light: #f9fafc;
+$light-blue: #bbcef2;
+
+.ibg {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+
+  img {
+    display: none;
+  }
+}
