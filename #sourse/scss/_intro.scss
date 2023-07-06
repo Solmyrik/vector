@@ -1,0 +1,137 @@
+.intro {
+  &__background {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    @media (min-width: $pc) and (max-height: 600px) {
+      height: 700px;
+    }
+    @media (max-width: $pc) and (max-height: 600px) {
+      height: 600px;
+    }
+  }
+
+  &__container {
+    height: calc(100vh - 94px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: $white;
+    @media (min-width: $pc) and (max-height: 600px) {
+      height: 606px;
+    }
+    @media (max-width: $pc) and (max-height: 600px) {
+      height: 506px;
+    }
+  }
+
+  &__body {
+    display: block;
+  }
+
+  &__suptitle {
+    border-radius: 42px;
+    background-color: $purple;
+    width: 260px;
+    height: 47px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 16px;
+    @media (max-width: $tablet) {
+      font-size: 18px;
+      width: 200px;
+      height: 37px;
+    }
+    @media (max-width: $mobile) {
+      display: none;
+    }
+  }
+
+  &__title {
+    font-size: 88px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%;
+    max-width: 1000px;
+    margin-bottom: 40px;
+    @media (max-width: $tablet) {
+      font-size: 60px;
+      max-width: 750px;
+    }
+    @media (max-width: $mobile) {
+      font-size: 32px;
+      max-width: 340px;
+    }
+  }
+
+  &__subtitle {
+    margin-bottom: 40px;
+    display: flex;
+    img {
+      width: 32px;
+      height: 32px;
+      margin-right: 12px;
+    }
+    p {
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 140%;
+      @media (max-width: $mobile) {
+        font-size: 16px;
+      }
+    }
+  }
+
+  &__buttons {
+  }
+
+  &__button {
+    position: relative;
+    width: 381px;
+    height: 93px;
+    border-radius: 24px;
+    background: linear-gradient(180deg, #faaf1c 0%, #d36718 100%);
+    box-shadow: 0px 15px 20px 0px rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    p {
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 140%;
+      color: $white;
+    }
+    transition: opacity 0.3s;
+    &:hover {
+      opacity: 0.7;
+    }
+    @media (max-width: $tablet) {
+      width: 301px;
+      height: 73px;
+      p {
+        font-size: 22px;
+      }
+    }
+    @media (max-width: $mobile) {
+      width: 100%;
+    }
+  }
+
+  &__sale {
+    position: absolute;
+    right: -50px;
+    top: -30px;
+    @media (max-width: $mobile) {
+      right: -25px;
+      top: -47px;
+    }
+  }
+}
