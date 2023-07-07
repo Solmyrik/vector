@@ -32,10 +32,9 @@
       crossorigin
     />
     <link rel="stylesheet" href="css/style.css" />
-    <script defer src="js/main.js"></script>
     <title>Вектор</title>
   </head>
-  <body>
+  <body class="">
     <div class="wrapper">
       <header class="header">
         <div class="header__burger">
@@ -58,7 +57,7 @@
               </div>
             </div>
             <a href="tel:+74990000000" class="header__phone">+7 (499) 000-00-00</a>
-            <a href="" class="header__button">Перезвоните мне</a>
+            <a data-popup="#popup" class="header__button">Перезвоните мне</a>
           </div>
         </div>
       </header>
@@ -82,9 +81,87 @@
                 <a href="" class="intro__button">
                   <p>Заказать со скидкой</p>
                   <div class="intro__sale">
-                    <img src="img/intro/sale.svg" alt="sale" />
+                    <!-- <img src="img/intro/sale.svg" alt="sale" /> -->
                   </div>
                 </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="work">
+          <div class="work__container">
+            <h2 class="work__title">Более <mark>2000</mark> проектов за <span>18 лет</span></h2>
+            <div class="work__body">
+              <div class="work__block">
+                <div class="work__wrapper">
+                  <div class="work__slide">
+                    <div class="work__left">
+                      <div class="work__bigimg">
+                        <img src="img/work/1/1.png" alt="house" />
+                      </div>
+                      <div class="work__images">
+                        <div class="work__img">
+                          <img src="img/work/1/2.png" alt="house" />
+                        </div>
+                        <div class="work__img">
+                          <img src="img/work/1/3.png" alt="house" />
+                        </div>
+                        <div class="work__img">
+                          <img src="img/work/1/4.png" alt="house" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="work__right">
+                      <h3 class="work__name">
+                        Элегантное остекление веранды: идеальное сочетание стиля и функциональности
+                      </h3>
+                      <div class="work__texts">
+                        <p>
+                          Наша компания успешно завершила работу по остеклению веранды для нашего
+                          клиента, г-на Иванова. С учетом его пожеланий и дизайна его дома, мы
+                          создали уникальное решение, которое сочетает в себе элегантность и
+                          практичность.
+                        </p>
+                        <p>
+                          Для остекления веранды мы использовали высококачественные материалы,
+                          включая прочное и прозрачное закаленное стекло, которое обеспечивает
+                          надежную защиту от погодных условий и прекрасный вид на окружающую
+                          местность. Также установили энергосберегающие стеклопакеты, которые
+                          помогают поддерживать комфортную температуру помещения в любое время года.
+                        </p>
+                      </div>
+                      <div class="work__values">
+                        <div class="work__value">
+                          <div class="work__icon">
+                            <img src="img/icons/measure.svg" alt="measure" />
+                          </div>
+                          <div class="work__size">
+                            <p>58 кв/м</p>
+                            <span>Площадь</span>
+                          </div>
+                        </div>
+                        <div class="work__value">
+                          <div class="work__icon">
+                            <img src="img/icons/local.svg" alt="local" />
+                          </div>
+                          <div class="work__size">
+                            <p>Московская обл.</p>
+                            <span>Гео</span>
+                          </div>
+                        </div>
+                      </div>
+                      <a href="" class="work__button button-work">
+                        <div class="button-work__icon">
+                          <img src="img/icons/calculator.svg" alt="calculator" />
+                        </div>
+                        <div class="button-work__texts">
+                          <div class="button-work__name">Рассчитать стоимость</div>
+                          <div class="button-work__subname">(бесплатно)</div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -92,5 +169,100 @@
       </main>
       <footer class="footer"></footer>
     </div>
+    <div id="popup" aria-hidden="true" class="popup">
+      <div class="popup__wrapper">
+        <div class="popup__content popup-form">
+          <div class="popup-form__body">
+            <h3 class="popup-form__title">
+              Получите бесплатную <br />
+              консультацию
+            </h3>
+            <form class="popup-form__form">
+              <input type="text" class="popup-form__input" placeholder="Имя" />
+              <input type="tel" data-tel-input class="popup-form__input" placeholder="+7 (" />
+              <button class="popup-form__button">Отправить</button>
+              <div class="popup-form__label">
+                <input type="checkbox" checked class="popup-form__checkbox" />
+                <p>
+                  Я даю свое согласие на обработку персональных данных и соглашаюсь с
+                  <span>политикой конфиденциальности</span>
+                </p>
+              </div>
+            </form>
+            <div class="popup-form__close" data-close>
+              <img src="img/icons/close.svg" alt="close" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="policy">
+      <div class="policy__wrapper">
+        <div class="policy__content">
+          <div class="policy__body">
+            <h3 class="policy__title">Политика конфиденциальности</h3>
+            <div class="policy__item">
+              <h4 class="policy__name">Сбор информации</h4>
+              <p class="policy__text">
+                При оставлении заявки на ресурсе фабрики ООО "Вектор" клиенты предоставляют
+                следующие сведения:
+              </p>
+              <ul class="policy__list">
+                <li class="policy__element">Имя.</li>
+                <li class="policy__element">Контактный телефон.</li>
+              </ul>
+              <p class="policy__text">
+                Также администрация получает данные об IP-адресе посетителей, а также о типе
+                браузера, времени нахождения на сайте и прочие подобные сведения. Сбор ведётся с
+                помощью сервисов статистики.
+              </p>
+            </div>
+            <div class="policy__item">
+              <h4 class="policy__name">Использование информации</h4>
+              <p class="policy__text">
+                Вся полученная информация используется администрацией фабрики ООО "Вектор"
+                исключительно в целях связи с клиентом
+              </p>
+            </div>
+            <div class="policy__item">
+              <h4 class="policy__name">Защита персональных данных</h4>
+              <p class="policy__text">
+                Фабрики ООО "Вектор" обязуется не разглашать сведения, полученные от клиентов.
+                Данные хранятся в базе данных на локальном компьютере администрации. Доступ к
+                компьютеру надёжно защищён паролем, который имеется только у администратора сайта.
+              </p>
+            </div>
+            <div class="policy__item">
+              <h4 class="policy__name">Предоставление данных третьим лицам</h4>
+              <p class="policy__text">
+                Полученные сведения не могут быть переданы третьим лицам, за исключением следующих
+                случаев:
+              </p>
+              <ul class="policy__list">
+                <li class="policy__element">
+                  Для исполнения обязательств перед клиентом – только с его разрешения.
+                </li>
+                <li class="policy__element">
+                  В соответствии с обоснованными и применимыми требованиями закона.
+                </li>
+              </ul>
+            </div>
+            <div class="policy__item">
+              <h4 class="policy__name">Срок действия согласия на обработку персональных данных</h4>
+              <p class="policy__text">
+                Срок действия согласия на обработку персональных данных неограничен, при желании вы
+                можете отозвать согласие на обработку персональных данных по номеру телефона.
+              </p>
+            </div>
+            <div class="policy__time">
+              Настоящая редакция политики конфиденциальности опубликована 19 июня 2023 года.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <script src="js/popup.js"></script>
+    <script src="js/mask.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
