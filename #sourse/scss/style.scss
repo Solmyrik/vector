@@ -30,9 +30,9 @@ main {
 }
 
 [class*='__container'] {
-  max-width: 1310px;
+  max-width: 1328px;
   margin: 0 auto;
-  padding: 0px 15px;
+  padding: 0px 24px;
   @media (max-width: 375px) {
     padding: 0px 10px;
   }
@@ -41,3 +41,4 @@ main {
 @import '_header';
 @import '_intro';
 @import '_policy';
+@import '_work';
