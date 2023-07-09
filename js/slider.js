@@ -5,6 +5,7 @@ new Swiper('.work__block', {
   },
   speed: 1100,
   spaceBetween: 15,
+  simulateTouch: false,
   slidesPerView: 1,
   navigation: {
     nextEl: '.work__arrow_next',
