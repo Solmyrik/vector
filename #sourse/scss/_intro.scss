@@ -1,5 +1,6 @@
 .intro {
   overflow: hidden;
+  max-width: 100vw;
   &__background {
     z-index: -1;
     position: absolute;

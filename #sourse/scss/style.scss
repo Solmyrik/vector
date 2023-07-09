@@ -6,6 +6,8 @@
   display: flex;
   flex-direction: column;
   min-height: 100%;
+  width: 100%;
+  position: relative;
 }
 html {
   &.lock {
@@ -42,3 +44,4 @@ main {
 @import '_intro';
 @import '_policy';
 @import '_work';
+@import '_quiz';

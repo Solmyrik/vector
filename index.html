@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
+    <!-- <link
       rel="preload"
       href="fonts/TTNormsPro-Medium.woff2"
       as="font"
@@ -30,7 +30,7 @@
       as="font"
       type="font/woff2"
       crossorigin
-    />
+    /> -->
     <link rel="stylesheet" href="css/style.css" />
     <title>Вектор</title>
   </head>
@@ -463,7 +463,7 @@
               </h2>
               <div class="quiz__body">
                 <div class="quiz__items">
-                  <div class="quiz__body">
+                  <div class="quiz__item active">
                     <h4 class="quiz__name">Что хотите остеклить?</h4>
                     <div class="quiz__elements">
                       <div class="quiz__element">
@@ -496,13 +496,194 @@
                       </div>
                     </div>
                   </div>
+                  <div class="quiz__item">
+                    <h4 class="quiz__name">Какое помещение необходимо остеклить?</h4>
+                    <div class="quiz__elements">
+                      <div class="quiz__element">
+                        <div class="quiz__radio"></div>
+                        <div class="quiz__value">Отапливаемое</div>
+                      </div>
+                      <div class="quiz__element">
+                        <div class="quiz__radio"></div>
+                        <div class="quiz__value">Неотапливаемое</div>
+                      </div>
+                      <div class="quiz__element">
+                        <div class="quiz__radio"></div>
+                        <div class="quiz__value">Другое</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="quiz__item">
+                    <h4 class="quiz__name">Из чего хотите окна?</h4>
+                    <div class="quiz__elements">
+                      <div class="quiz__element">
+                        <div class="quiz__radio"></div>
+                        <div class="quiz__value">Алюминий</div>
+                      </div>
+                      <div class="quiz__element">
+                        <div class="quiz__radio"></div>
+                        <div class="quiz__value">Пластик</div>
+                      </div>
+                      <div class="quiz__element">
+                        <div class="quiz__radio"></div>
+                        <div class="quiz__value">Еще не знаю</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="quiz__item">
+                    <h4 class="quiz__name">Какой стеклопакет хотите?</h4>
+                    <div class="quiz__elements">
+                      <div class="quiz__element">
+                        <div class="quiz__radio"></div>
+                        <div class="quiz__value">1 стекло</div>
+                      </div>
+                      <div class="quiz__element">
+                        <div class="quiz__radio"></div>
+                        <div class="quiz__value">2 стекла</div>
+                      </div>
+                      <div class="quiz__element">
+                        <div class="quiz__radio"></div>
+                        <div class="quiz__value">3 стекла</div>
+                      </div>
+                      <div class="quiz__element">
+                        <div class="quiz__radio"></div>
+                        <div class="quiz__value">Еще не знаю</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="quiz__item">
+                    <h4 class="quiz__name">Какой цвет хотите?</h4>
+                    <div class="quiz__elements">
+                      <div class="quiz__element">
+                        <div class="quiz__radio"></div>
+                        <div class="quiz__value">Белый</div>
+                      </div>
+                      <div class="quiz__element">
+                        <div class="quiz__radio"></div>
+                        <div class="quiz__value">Ламинария по каталогу</div>
+                      </div>
+                      <div class="quiz__element">
+                        <div class="quiz__radio"></div>
+                        <div class="quiz__value">Покраска по RAL</div>
+                      </div>
+                      <div class="quiz__element">
+                        <div class="quiz__radio"></div>
+                        <div class="quiz__value">Еще не знаю</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="quiz__item">
+                    <h4 class="quiz__name">Примерные размеры помещения?</h4>
+                    <div class="quiz__elements">
+                      <div class="quiz__element">
+                        <div class="quiz__radio"></div>
+                        <div class="quiz__value">0 — 25 кв.м.</div>
+                      </div>
+                      <div class="quiz__element">
+                        <div class="quiz__radio"></div>
+                        <div class="quiz__value">25 — 50 кв.м.</div>
+                      </div>
+                      <div class="quiz__element">
+                        <div class="quiz__radio"></div>
+                        <div class="quiz__value">50 — 75 кв.м.</div>
+                      </div>
+                      <div class="quiz__element">
+                        <div class="quiz__radio"></div>
+                        <div class="quiz__value">От 75 кв.м.</div>
+                      </div>
+                      <div class="quiz__element">
+                        <div class="quiz__radio"></div>
+                        <div class="quiz__value">Еще не знаю</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="quiz__item">
+                    <h4 class="quiz__name">Когда планируете начать работы?</h4>
+                    <div class="quiz__elements">
+                      <div class="quiz__element">
+                        <div class="quiz__radio"></div>
+                        <div class="quiz__value">В течение этого месяца</div>
+                      </div>
+                      <div class="quiz__element">
+                        <div class="quiz__radio"></div>
+                        <div class="quiz__value">В следующем месяце</div>
+                      </div>
+                      <div class="quiz__element">
+                        <div class="quiz__radio"></div>
+                        <div class="quiz__value">В конце сезона</div>
+                      </div>
+                      <div class="quiz__element">
+                        <div class="quiz__radio"></div>
+                        <div class="quiz__value">Еще не знаю</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="quiz__item">
+                    <h4 class="quiz__name">Что вас интересует на данным момент?</h4>
+                    <div class="quiz__elements">
+                      <div class="quiz__element">
+                        <div class="quiz__radio"></div>
+                        <div class="quiz__value">Выезд замерщика и эскизы</div>
+                      </div>
+                      <div class="quiz__element">
+                        <div class="quiz__radio"></div>
+                        <div class="quiz__value">Замерщик не нужен, уже есть чертежи</div>
+                      </div>
+                      <div class="quiz__element">
+                        <div class="quiz__radio"></div>
+                        <div class="quiz__value">Консультация и ориентировочная стоимость</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="quiz__item">
+                    <h4 class="quiz__name">Выберите ваш подарок</h4>
+                    <div class="quiz__elements">
+                      <div class="quiz__element">
+                        <div class="quiz__radio"></div>
+                        <div class="quiz__value">Скидка до 30%</div>
+                      </div>
+                      <div class="quiz__element">
+                        <div class="quiz__radio"></div>
+                        <div class="quiz__value">Москитные сетки</div>
+                      </div>
+                      <div class="quiz__element">
+                        <div class="quiz__radio"></div>
+                        <div class="quiz__value">Робот мойщик окон</div>
+                      </div>
+                      <div class="quiz__element">
+                        <div class="quiz__radio"></div>
+                        <div class="quiz__value">Подоконники на окна</div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
                 <div class="quiz__bottom">
-                  <div class="quiz__line"></div>
+                  <div class="quiz__line">
+                    <div class="quiz__progres"></div>
+                  </div>
                   <div class="quiz__number">
                     <span>1</span>
                     <p>/9</p>
                   </div>
+                </div>
+              </div>
+              <div class="quiz__mobile mobile-quiz">
+                <div class="mobile-quiz__body">
+                  <h3 class="mobile-quiz__name">
+                    Укажите Ваш номер, за ним мы закрепим подарок или скидку до 30%.
+                  </h3>
+                  <form class="mobile-quiz__form">
+                    <input type="text" class="mobile-quiz__input" placeholder="Имя" />
+                    <input type="tel" data-tel-input class="mobile-quiz__input" value="+7 (" />
+                    <button class="mobile-quiz__button">Отправить</button>
+                    <div class="mobile-quiz__label">
+                      <input type="checkbox" checked class="mobile-quiz__checkbox" />
+                      <p>
+                        Я даю свое согласие на обработку персональных данных и соглашаюсь с
+                        <span>политикой конфиденциальности</span>
+                      </p>
+                    </div>
+                  </form>
                 </div>
               </div>
             </div>
@@ -610,6 +791,7 @@
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/popup.js"></script>
     <script src="js/slider.js"></script>
+    <script src="js/quiz.js"></script>
     <script src="js/mask.js"></script>
     <script src="js/main.js"></script>
   </body>
