@@ -1,0 +1,163 @@
+.about {
+  background-color: $purple;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  @media (max-width: $tablet) {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+  &__container {
+  }
+
+  &__top {
+  }
+
+  &__center {
+  }
+
+  &__bottom {
+  }
+}
+.top-about {
+  height: 688px;
+  position: relative;
+  &__background {
+    height: 688px;
+    width: 100%;
+    border-radius: 24px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  &__body {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    padding: 56px;
+  }
+
+  &__left {
+    flex: 0 1 570px;
+  }
+
+  &__title {
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%;
+    color: $white;
+    margin-bottom: 40px;
+    span {
+      font-weight: 700;
+    }
+  }
+
+  &__items {
+    margin-bottom: 40px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    &:not(:last-child) {
+      margin-bottom: 6px;
+    }
+  }
+
+  &__icon {
+  }
+
+  &__value {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    color: $white;
+  }
+
+  &__text {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%;
+    color: $white;
+  }
+
+  &__right {
+    position: absolute;
+    bottom: -3px;
+    right: 0;
+  }
+
+  &__image {
+  }
+
+  &__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    span {
+      font-size: 64px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 110%;
+      color: $white;
+    }
+  }
+
+  &__elements {
+    border-radius: 4px;
+    background: #8950d8;
+    padding: 16px;
+    box-shadow: 0px 15px 20px 0px rgba(0, 0, 0, 0.05);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    color: $white;
+    &:not(:last-child) {
+      margin-bottom: 2px;
+    }
+  }
+}
+.center-about {
+  &__body {
+  }
+
+  &__item {
+  }
+
+  &__icon {
+  }
+
+  &__name {
+  }
+
+  &__text {
+  }
+}
+.bottom-about {
+  &__left {
+  }
+
+  &__title {
+  }
+
+  &__text {
+  }
+
+  &__right {
+  }
+
+  &__button {
+  }
+
+  &__decor {
+  }
+
+  &__icon {
+  }
+
+  &__texts {
+  }
+}
