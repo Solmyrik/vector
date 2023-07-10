@@ -1,3 +1,4 @@
+// modification mask
 document.addEventListener('DOMContentLoaded', function () {
   var phoneInputs = document.querySelectorAll('input[data-tel-input]');
 
@@ -55,6 +56,9 @@ document.addEventListener('DOMContentLoaded', function () {
       }
       if (inputNumbersValue.length >= 10) {
         formattedInputValue += '-' + inputNumbersValue.substring(9, 11);
+      }
+      if (inputNumbersValue.length >= 11) {
+        formattedInputValue += inputNumbersValue.substring(11, 12);
       }
     } else {
       formattedInputValue = '+' + inputNumbersValue.substring(0, 16);
