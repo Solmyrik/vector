@@ -78,10 +78,19 @@
     border-radius: 16px;
     margin: 0 auto;
     padding: 40px;
+    position: relative;
 
     @media (max-width: $mobileSmall) {
       width: 100%;
       padding: 24px;
+    }
+  }
+  &__decor {
+    position: absolute;
+    top: -54px;
+    right: -65px;
+    @media (max-width: $mobile) {
+      display: none;
     }
   }
   &__mobile {

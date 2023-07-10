@@ -31,12 +31,6 @@ function gallery() {
           e.target.childNodes[1].getAttribute('src');
       }
     });
-    // container.forEach((img) => {
-    //   img.onclick = () => {
-    //     popup.classList.add('active');
-    //     document.querySelector('.gallery__popup img').src = img.childNodes[1].getAttribute('src');
-    //   };
-    // });
 
     document.querySelector('.gallery__popup').onclick = (e) => {
       if (e.target.tagName !== 'IMG') {
@@ -46,3 +40,27 @@ function gallery() {
   }
 }
 gallery();
+
+// reviews
+const reviewsAll = document.querySelector('.reviews__all');
+const reviewsItems = document.querySelectorAll('.reviews__item');
+
+reviewsAll.addEventListener('click', (e) => {
+  reviewsItems.forEach((r) => {
+    r.classList.remove('none');
+  });
+  reviewsAll.style.display = 'none';
+});
+
+//policy
+const policyBlock = document.querySelector('.policy');
+const policyLink = document.querySelector('.policy-link');
+
+policyLink.addEventListener('click', (e) => {
+  policyBlock.classList.add('show');
+  document.querySelector('.policy').onclick = (e) => {
+    if (e.target.className === 'policy__wrapper' || e.target.className === 'policy__close') {
+      policyBlock.classList.remove('show');
+    }
+  };
+});
