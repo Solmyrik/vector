@@ -11,7 +11,7 @@ if (iconMenu) {
 const listMenu = document.querySelector('.menu__list');
 listMenu.addEventListener('click', (e) => {
   if (e.target.className === 'menu__link') {
-    document.body.classList.toggle('_lock');
+    document.body.classList.remove('_lock');
     iconMenu.classList.remove('_active');
     menuBody.classList.remove('_active');
   }

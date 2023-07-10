@@ -30,6 +30,12 @@ $light-blue: #bbcef2;
   font-style: normal;
 }
 @font-face {
+  font-family: 'TTItalic';
+  src: url('../fonts/TTItalic.woff') format('woff'), url('../fonts/TTItalic.woff2') format('woff2');
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
   font-family: 'TTBold';
   src: url('../fonts/TTBold.woff') format('woff'), url('../fonts/TTBold.woff2') format('woff2');
   font-weight: 700;
