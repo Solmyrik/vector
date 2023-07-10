@@ -43,7 +43,7 @@
     align-items: center;
     justify-content: center;
     font-size: 24px;
-    font-weight: 500;
+    font-family: 'TTMedium';
     margin-bottom: 16px;
     @media (max-width: $tablet) {
       font-size: 18px;
@@ -58,7 +58,7 @@
   &__title {
     font-size: 88px;
     font-style: normal;
-    font-weight: 700;
+    font-family: 'TTBold';
     line-height: 110%;
     max-width: 1000px;
     margin-bottom: 40px;
@@ -83,7 +83,7 @@
     p {
       font-size: 20px;
       font-style: normal;
-      font-weight: 400;
+      font-family: 'TTRegular';
       line-height: 140%;
       @media (max-width: $mobile) {
         font-size: 16px;
@@ -107,7 +107,7 @@
     p {
       font-size: 32px;
       font-style: normal;
-      font-weight: 500;
+      font-family: 'TTMedium';
       line-height: 140%;
       color: $white;
     }

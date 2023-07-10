@@ -11,19 +11,19 @@
   &__title {
     font-size: 64px;
     font-style: normal;
-    font-weight: 400;
+    font-family: 'TTRegular';
     line-height: 110%;
     margin-bottom: 40px;
     span {
-      font-weight: 700;
+      font-family: 'TTBold';
     }
     @media (max-width: $mobile) {
       font-size: 32px;
       font-style: normal;
-      font-weight: 500;
+      font-family: 'TTMedium';
       margin-bottom: 24px;
       span {
-        font-weight: 500;
+        font-family: 'TTMedium';
       }
     }
   }
@@ -60,7 +60,7 @@
   &__value {
     font-size: 24px;
     font-style: normal;
-    font-weight: 500;
+    font-family: 'TTMedium';
   }
 
   &__text {
@@ -81,7 +81,7 @@
     background: linear-gradient(180deg, #faaf1c 0%, #d36718 100%);
     font-size: 24px;
     font-style: normal;
-    font-weight: 500;
+    font-family: 'TTMedium';
     color: $white;
     display: flex;
     align-items: center;
@@ -107,7 +107,7 @@
     background: linear-gradient(180deg, #faaf1c 0%, #d36718 100%);
     font-size: 24px;
     font-style: normal;
-    font-weight: 500;
+    font-family: 'TTMedium';
     color: $white;
     display: inline-flex;
     margin: 0 auto;
@@ -183,21 +183,21 @@
   &__name {
     font-size: 24px;
     font-style: normal;
-    font-weight: 500;
+    font-family: 'TTMedium';
     line-height: 130%;
   }
 
   &__time {
     font-size: 16px;
     font-style: normal;
-    font-weight: 400;
+    font-family: 'TTRegular';
     line-height: 140%;
   }
 
   &__content {
     font-size: 16px;
     font-style: normal;
-    font-weight: 400;
+    font-family: 'TTRegular';
     line-height: 140%;
     flex: 1 1 auto;
   }
@@ -212,7 +212,7 @@
   &__link {
     font-size: 20px;
     font-style: normal;
-    font-weight: 400;
+    font-family: 'TTRegular';
     line-height: 140%;
     text-decoration-line: underline;
     color: $purple;

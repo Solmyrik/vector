@@ -93,7 +93,21 @@ html {
 @font-face {
   font-family: 'TTMedium';
   src: url("../fonts/TTMedium.woff") format("woff"), url("../fonts/TTMedium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TTRegular';
+  src: url("../fonts/TTRegular.woff") format("woff"), url("../fonts/TTRegular.woff2") format("woff2");
   font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TTBold';
+  src: url("../fonts/TTBold.woff") format("woff"), url("../fonts/TTBold.woff2") format("woff2");
+  font-weight: 700;
   font-style: normal;
 }
 
@@ -255,7 +269,7 @@ body::after {
 .popup-form__title {
   font-size: 32px;
   font-style: normal;
-  font-weight: 500;
+  font-family: 'TTMedium';
   line-height: 120%;
   margin-bottom: 24px;
 }
@@ -285,7 +299,7 @@ body::after {
   padding-left: 24px;
   font-size: 20px;
   font-style: normal;
-  font-weight: 400;
+  font-family: 'TTRegular';
   line-height: 140%;
 }
 
@@ -313,7 +327,7 @@ body::after {
   background: linear-gradient(180deg, #faaf1c 0%, #d36718 100%);
   font-size: 32px;
   font-style: normal;
-  font-weight: 500;
+  font-family: 'TTMedium';
   color: #ffffff;
   -webkit-transition: opacity 0.3s;
   transition: opacity 0.3s;
@@ -341,7 +355,7 @@ body::after {
 .popup-form__label p {
   font-size: 14px;
   font-style: normal;
-  font-weight: 400;
+  font-family: 'TTRegular';
   line-height: 140%;
 }
 
@@ -378,7 +392,7 @@ html.lock {
 body {
   color: #262626;
   font-size: 20px;
-  font-family: 'TTMedium';
+  font-family: 'TTRegular';
   font-weight: 400;
   font-style: normal;
 }
@@ -482,7 +496,7 @@ main {
 
 .header__phone {
   color: #ffffff;
-  font-weight: 500;
+  font-family: 'TTMedium';
   -webkit-transition: color 0.3s;
   transition: color 0.3s;
 }
@@ -507,7 +521,7 @@ main {
 
 .header__button {
   cursor: pointer;
-  font-weight: 500;
+  font-family: 'TTMedium';
   font-size: 16px;
   border-radius: 24px;
   background: -webkit-gradient(linear, left top, left bottom, from(#faaf1c), to(#d36718));
@@ -590,7 +604,7 @@ main {
 
 .menu__link {
   color: #ffffff;
-  font-weight: 500;
+  font-family: 'TTMedium';
 }
 
 @media (max-width: 1328px) {
@@ -725,7 +739,7 @@ main {
       -ms-flex-pack: center;
           justify-content: center;
   font-size: 24px;
-  font-weight: 500;
+  font-family: 'TTMedium';
   margin-bottom: 16px;
 }
 
@@ -746,7 +760,7 @@ main {
 .intro__title {
   font-size: 88px;
   font-style: normal;
-  font-weight: 700;
+  font-family: 'TTBold';
   line-height: 110%;
   max-width: 1000px;
   margin-bottom: 40px;
@@ -782,7 +796,7 @@ main {
 .intro__subtitle p {
   font-size: 20px;
   font-style: normal;
-  font-weight: 400;
+  font-family: 'TTRegular';
   line-height: 140%;
 }
 
@@ -817,7 +831,7 @@ main {
 .intro__button p {
   font-size: 32px;
   font-style: normal;
-  font-weight: 500;
+  font-family: 'TTMedium';
   line-height: 140%;
   color: #ffffff;
 }
@@ -964,7 +978,7 @@ main {
 .policy__title {
   text-align: center;
   font-size: 28px;
-  font-weight: 700;
+  font-family: 'TTBold';
   margin-bottom: 24px;
 }
 
@@ -974,7 +988,7 @@ main {
 
 .policy__name {
   font-size: 20px;
-  font-weight: 500;
+  font-family: 'TTMedium';
   margin-bottom: 10px;
 }
 
@@ -1020,7 +1034,7 @@ main {
 .work__title {
   font-size: 64px;
   font-style: normal;
-  font-weight: 400;
+  font-family: 'TTRegular';
   line-height: 110%;
   color: #262626;
   margin-bottom: 80px;
@@ -1031,7 +1045,7 @@ main {
     color: #ffffff;
     background-color: #391085;
     border-radius: 10px;
-    font-weight: 700;
+    font-family: 'TTBold';
     padding: 0px 5px;
   }
 }
@@ -1044,12 +1058,12 @@ main {
 }
 
 .work__title span {
-  font-weight: 700;
+  font-family: 'TTBold';
 }
 
 @media (max-width: 767.98px) {
   .work__title span {
-    font-weight: 500;
+    font-family: 'TTMedium';
   }
 }
 
@@ -1063,7 +1077,7 @@ main {
   .work__title {
     font-size: 44px;
     font-size: 32px;
-    font-weight: 500;
+    font-family: 'TTMedium';
     margin-bottom: 24px;
   }
 }
@@ -1218,7 +1232,7 @@ main {
   font-size: 30px;
   margin-top: -7px;
   font-style: normal;
-  font-weight: 500;
+  font-family: 'TTMedium';
   line-height: 120%;
   margin-bottom: 24px;
 }
@@ -1232,7 +1246,7 @@ main {
 .work__texts {
   font-size: 16px;
   font-style: normal;
-  font-weight: 400;
+  font-family: 'TTRegular';
   line-height: 140%;
   margin-bottom: 30px;
 }
@@ -1272,14 +1286,14 @@ main {
 .work__size p {
   font-size: 24px;
   font-style: normal;
-  font-weight: 500;
+  font-family: 'TTMedium';
   line-height: 100%;
 }
 
 .work__size span {
   font-size: 14px;
   font-style: normal;
-  font-weight: 400;
+  font-family: 'TTRegular';
 }
 
 .button-work {
@@ -1328,7 +1342,7 @@ main {
 .button-work__name {
   font-size: 32px;
   font-style: normal;
-  font-weight: 500;
+  font-family: 'TTMedium';
   margin-bottom: 8px;
 }
 
@@ -1341,7 +1355,7 @@ main {
 .button-work__subname {
   font-size: 14px;
   font-style: italic;
-  font-weight: 500;
+  font-family: 'TTMedium';
 }
 
 .swiper__container {
@@ -1420,7 +1434,7 @@ main {
 .quiz__title {
   font-size: 64px;
   font-style: normal;
-  font-weight: 400;
+  font-family: 'TTRegular';
   line-height: 110%;
   text-align: center;
   color: #ffffff;
@@ -1433,7 +1447,7 @@ main {
     background: -webkit-gradient(linear, left top, left bottom, from(#faaf1c), to(#d36718));
     background: linear-gradient(180deg, #faaf1c 0%, #d36718 100%);
     border-radius: 10px;
-    font-weight: 700;
+    font-family: 'TTBold';
     padding: 0px 5px;
   }
 }
@@ -1446,12 +1460,12 @@ main {
 }
 
 .quiz__title span {
-  font-weight: 700;
+  font-family: 'TTBold';
 }
 
 @media (max-width: 767.98px) {
   .quiz__title span {
-    font-weight: 500;
+    font-family: 'TTMedium';
   }
 }
 
@@ -1465,7 +1479,7 @@ main {
   .quiz__title {
     font-size: 44px;
     font-size: 32px;
-    font-weight: 500;
+    font-family: 'TTMedium';
     margin-bottom: 24px;
   }
 }
@@ -1523,7 +1537,7 @@ main {
 .quiz__name {
   font-size: 31px;
   font-style: normal;
-  font-weight: 700;
+  font-family: 'TTBold';
   line-height: 130%;
   margin-bottom: 32px;
   min-height: 81px;
@@ -1567,7 +1581,7 @@ main {
 .quiz__value {
   font-size: 20px;
   font-style: normal;
-  font-weight: 400;
+  font-family: 'TTRegular';
 }
 
 .quiz__item {
@@ -1613,7 +1627,7 @@ main {
 .quiz__number {
   font-size: 24px;
   font-style: normal;
-  font-weight: 500;
+  font-family: 'TTMedium';
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1622,7 +1636,7 @@ main {
 .mobile-quiz__name {
   font-size: 26px;
   font-style: normal;
-  font-weight: 700;
+  font-family: 'TTBold';
   line-height: 120%;
   margin-bottom: 24px;
 }
@@ -1653,7 +1667,7 @@ main {
   padding-left: 24px;
   font-size: 20px;
   font-style: normal;
-  font-weight: 400;
+  font-family: 'TTRegular';
 }
 
 .mobile-quiz__input::-webkit-input-placeholder {
@@ -1687,7 +1701,7 @@ main {
           justify-content: center;
   font-size: 24px;
   font-style: normal;
-  font-weight: 500;
+  font-family: 'TTMedium';
   border-radius: 24px;
   background: -webkit-gradient(linear, left top, left bottom, from(#faaf1c), to(#d36718));
   background: linear-gradient(180deg, #faaf1c 0%, #d36718 100%);
@@ -1711,7 +1725,7 @@ main {
 .mobile-quiz__label p {
   font-size: 14px;
   font-style: normal;
-  font-weight: 400;
+  font-family: 'TTRegular';
   line-height: 140%;
 }
 
@@ -1735,24 +1749,24 @@ main {
 .reviews__title {
   font-size: 64px;
   font-style: normal;
-  font-weight: 400;
+  font-family: 'TTRegular';
   line-height: 110%;
   margin-bottom: 40px;
 }
 
 .reviews__title span {
-  font-weight: 700;
+  font-family: 'TTBold';
 }
 
 @media (max-width: 767.98px) {
   .reviews__title {
     font-size: 32px;
     font-style: normal;
-    font-weight: 500;
+    font-family: 'TTMedium';
     margin-bottom: 24px;
   }
   .reviews__title span {
-    font-weight: 500;
+    font-family: 'TTMedium';
   }
 }
 
@@ -1811,7 +1825,7 @@ main {
 .reviews__value {
   font-size: 24px;
   font-style: normal;
-  font-weight: 500;
+  font-family: 'TTMedium';
 }
 
 .reviews__text {
@@ -1833,7 +1847,7 @@ main {
   background: linear-gradient(180deg, #faaf1c 0%, #d36718 100%);
   font-size: 24px;
   font-style: normal;
-  font-weight: 500;
+  font-family: 'TTMedium';
   color: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1878,7 +1892,7 @@ main {
   background: linear-gradient(180deg, #faaf1c 0%, #d36718 100%);
   font-size: 24px;
   font-style: normal;
-  font-weight: 500;
+  font-family: 'TTMedium';
   color: #ffffff;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -1995,21 +2009,21 @@ main {
 .reviews__name {
   font-size: 24px;
   font-style: normal;
-  font-weight: 500;
+  font-family: 'TTMedium';
   line-height: 130%;
 }
 
 .reviews__time {
   font-size: 16px;
   font-style: normal;
-  font-weight: 400;
+  font-family: 'TTRegular';
   line-height: 140%;
 }
 
 .reviews__content {
   font-size: 16px;
   font-style: normal;
-  font-weight: 400;
+  font-family: 'TTRegular';
   line-height: 140%;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
@@ -2030,7 +2044,7 @@ main {
 .reviews__link {
   font-size: 20px;
   font-style: normal;
-  font-weight: 400;
+  font-family: 'TTRegular';
   line-height: 140%;
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
@@ -2096,14 +2110,14 @@ main {
 .top-about__title {
   font-size: 64px;
   font-style: normal;
-  font-weight: 400;
+  font-family: 'TTRegular';
   line-height: 110%;
   color: #ffffff;
   margin-bottom: 40px;
 }
 
 .top-about__title span {
-  font-weight: 700;
+  font-family: 'TTBold';
 }
 
 .top-about__items {
@@ -2127,14 +2141,14 @@ main {
 .top-about__value {
   font-size: 20px;
   font-style: normal;
-  font-weight: 400;
+  font-family: 'TTRegular';
   color: #ffffff;
 }
 
 .top-about__text {
   font-size: 24px;
   font-style: normal;
-  font-weight: 500;
+  font-family: 'TTMedium';
   line-height: 130%;
   color: #ffffff;
 }
@@ -2154,7 +2168,7 @@ main {
 .top-about__content span {
   font-size: 64px;
   font-style: normal;
-  font-weight: 400;
+  font-family: 'TTRegular';
   line-height: 110%;
   color: #ffffff;
 }
@@ -2167,7 +2181,7 @@ main {
           box-shadow: 0px 15px 20px 0px rgba(0, 0, 0, 0.05);
   font-size: 16px;
   font-style: normal;
-  font-weight: 500;
+  font-family: 'TTMedium';
   color: #ffffff;
 }
 

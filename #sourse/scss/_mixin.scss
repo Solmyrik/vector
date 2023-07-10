@@ -19,7 +19,20 @@ $light-blue: #bbcef2;
 @font-face {
   font-family: 'TTMedium';
   src: url('../fonts/TTMedium.woff') format('woff'), url('../fonts/TTMedium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'TTRegular';
+  src: url('../fonts/TTRegular.woff') format('woff'),
+    url('../fonts/TTRegular.woff2') format('woff2');
   font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'TTBold';
+  src: url('../fonts/TTBold.woff') format('woff'), url('../fonts/TTBold.woff2') format('woff2');
+  font-weight: 700;
   font-style: normal;
 }
 

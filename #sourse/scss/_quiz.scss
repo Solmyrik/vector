@@ -33,7 +33,7 @@
   &__title {
     font-size: 64px;
     font-style: normal;
-    font-weight: 400;
+    font-family: 'TTRegular';
     line-height: 110%;
     text-align: center;
     color: $white;
@@ -43,7 +43,7 @@
         color: $white;
         background: linear-gradient(180deg, #faaf1c 0%, #d36718 100%);
         border-radius: 10px;
-        font-weight: 700;
+        font-family: 'TTBold';
         padding: 0px 5px;
       }
       @media (max-width: $mobile) {
@@ -52,9 +52,9 @@
       }
     }
     span {
-      font-weight: 700;
+      font-family: 'TTBold';
       @media (max-width: $mobile) {
-        font-weight: 500;
+        font-family: 'TTMedium';
       }
     }
     @media (max-width: $tablet) {
@@ -63,7 +63,7 @@
     @media (max-width: $mobile) {
       font-size: 44px;
       font-size: 32px;
-      font-weight: 500;
+      font-family: 'TTMedium';
       margin-bottom: 24px;
     }
     @media (max-width: 390px) {
@@ -113,7 +113,7 @@
   &__name {
     font-size: 31px;
     font-style: normal;
-    font-weight: 700;
+    font-family: 'TTBold';
     line-height: 130%;
     margin-bottom: 32px;
     min-height: 81px;
@@ -147,7 +147,7 @@
   &__value {
     font-size: 20px;
     font-style: normal;
-    font-weight: 400;
+    font-family: 'TTRegular';
   }
 
   &__item {
@@ -184,7 +184,7 @@
   &__number {
     font-size: 24px;
     font-style: normal;
-    font-weight: 500;
+    font-family: 'TTMedium';
     display: flex;
   }
 }
@@ -196,7 +196,7 @@
   &__name {
     font-size: 26px;
     font-style: normal;
-    font-weight: 700;
+    font-family: 'TTBold';
     line-height: 120%;
     margin-bottom: 24px;
     @media (max-width: $mobileSmall) {
@@ -219,7 +219,7 @@
     padding-left: 24px;
     font-size: 20px;
     font-style: normal;
-    font-weight: 400;
+    font-family: 'TTRegular';
     &::placeholder {
       color: $black;
     }
@@ -234,7 +234,7 @@
     justify-content: center;
     font-size: 24px;
     font-style: normal;
-    font-weight: 500;
+    font-family: 'TTMedium';
     border-radius: 24px;
     background: linear-gradient(180deg, #faaf1c 0%, #d36718 100%);
     color: $white;
@@ -250,7 +250,7 @@
     p {
       font-size: 14px;
       font-style: normal;
-      font-weight: 400;
+      font-family: 'TTRegular';
       line-height: 140%;
       span {
         color: #1890ff;

@@ -75,7 +75,7 @@ body::after {
   &__title {
     font-size: 32px;
     font-style: normal;
-    font-weight: 500;
+    font-family: 'TTMedium';
     line-height: 120%;
     margin-bottom: 24px;
     @media (max-width: $mobileSmall) {
@@ -97,7 +97,7 @@ body::after {
     padding-left: 24px;
     font-size: 20px;
     font-style: normal;
-    font-weight: 400;
+    font-family: 'TTRegular';
     line-height: 140%;
     &::placeholder {
       color: $black;
@@ -114,7 +114,7 @@ body::after {
     background: linear-gradient(180deg, #faaf1c 0%, #d36718 100%);
     font-size: 32px;
     font-style: normal;
-    font-weight: 500;
+    font-family: 'TTMedium';
     color: $white;
     transition: opacity 0.3s;
     margin-bottom: 32px;
@@ -133,7 +133,7 @@ body::after {
     p {
       font-size: 14px;
       font-style: normal;
-      font-weight: 400;
+      font-family: 'TTRegular';
       line-height: 140%;
       span {
         color: #1890ff;
