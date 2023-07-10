@@ -16,6 +16,14 @@ $gray: #a5a19e;
 $light: #f9fafc;
 $light-blue: #bbcef2;
 
+@font-face {
+  font-family: 'TT Norms Pro';
+  src: url('../fonts/TNormsPro-Regular.woff') format('woff'),
+    url('../fonts/TNormsPro-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
 .ibg {
   background-position: center;
   background-size: cover;
