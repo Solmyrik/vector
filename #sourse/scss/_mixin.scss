@@ -17,9 +17,8 @@ $light: #f9fafc;
 $light-blue: #bbcef2;
 
 @font-face {
-  font-family: 'TT';
-  src: url('../fonts/TTRegular.woff') format('woff'),
-    url('../fonts/TTRegular.woff2') format('woff2');
+  font-family: 'TTMedium';
+  src: url('../fonts/TTMedium.woff') format('woff'), url('../fonts/TTMedium.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
 }
