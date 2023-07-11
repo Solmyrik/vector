@@ -16,6 +16,10 @@
     line-height: 110%;
     color: $black;
     margin-bottom: 80px;
+    @media (max-width: $laptop) {
+      font-size: 50px;
+      margin-bottom: 60px;
+    }
     mark {
       @media (min-width: $mobile) {
         color: $white;
@@ -67,12 +71,24 @@
       img {
         transform: rotate(180deg);
       }
+      @media (max-width: $laptop) {
+        left: -72px;
+      }
+      @media (max-width: $tablet) {
+        left: -36px;
+      }
       @media (max-width: $mobile) {
         left: -24px;
       }
     }
     &_next {
       right: -36px;
+      @media (max-width: $laptop) {
+        right: -72px;
+      }
+      @media (max-width: $tablet) {
+        right: -36px;
+      }
       @media (max-width: $mobile) {
         right: -24px;
       }
@@ -149,6 +165,10 @@
     font-family: 'TTMedium';
     line-height: 120%;
     margin-bottom: 24px;
+    @media (max-width: $laptop) {
+      font-size: 24px;
+      margin-top: -4px;
+    }
     @media (max-width: $mobile) {
       font-size: 24px;
     }
@@ -165,6 +185,12 @@
         margin-bottom: 15px;
       }
     }
+    @media (max-width: $laptop) {
+      font-size: 15px;
+    }
+    @media (max-width: $tablet) {
+      font-size: 16px;
+    }
   }
 
   &__values {
@@ -172,6 +198,9 @@
     gap: 40px;
     margin-bottom: 40px;
     flex: 1 1 auto;
+    @media (max-width: $laptop) {
+      margin-bottom: 20px;
+    }
     @media (max-width: $mobile) {
       flex-direction: column;
       gap: 24px;
@@ -209,6 +238,10 @@
   display: inline-flex;
   padding: 24px 40px;
   width: 482px;
+  @media (max-width: $laptop) {
+    padding: 14px 30px;
+    width: 400px;
+  }
   @media (max-width: $mobile) {
     width: 100%;
     display: flex;
@@ -233,6 +266,9 @@
     font-style: normal;
     font-family: 'TTMedium';
     margin-bottom: 8px;
+    @media (max-width: $laptop) {
+      font-size: 26px;
+    }
     @media (max-width: $mobile) {
       font-size: 24px;
     }

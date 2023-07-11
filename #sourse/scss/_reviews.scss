@@ -17,6 +17,9 @@
     span {
       font-family: 'TTBold';
     }
+    @media (max-width: $laptop) {
+      font-size: 50px;
+    }
     @media (max-width: $mobile) {
       font-size: 32px;
       font-style: normal;
@@ -124,7 +127,7 @@
     gap: 40px;
     flex-wrap: wrap;
     margin-bottom: 40px;
-    @media (max-width: $pc) {
+    @media (max-width: $laptop) {
       gap: 20px;
       row-gap: 40px;
     }

@@ -35,6 +35,9 @@ main {
   max-width: 1328px;
   margin: 0 auto;
   padding: 0px 24px;
+  @media (max-width: $laptop) {
+    max-width: 1200px;
+  }
   @media (max-width: 375px) {
     padding: 0px 10px;
   }

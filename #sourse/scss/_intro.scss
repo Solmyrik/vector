@@ -45,7 +45,7 @@
     font-size: 24px;
     font-family: 'TTMedium';
     margin-bottom: 16px;
-    @media (max-width: $tablet) {
+    @media (max-width: $laptop) {
       font-size: 18px;
       width: 200px;
       height: 37px;
@@ -62,7 +62,7 @@
     line-height: 110%;
     max-width: 1000px;
     margin-bottom: 40px;
-    @media (max-width: $tablet) {
+    @media (max-width: $laptop) {
       font-size: 60px;
       max-width: 750px;
     }
