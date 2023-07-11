@@ -63,13 +63,15 @@ reviewsAll.addEventListener('click', (e) => {
 
 //policy
 const policyBlock = document.querySelector('.policy');
-const policyLink = document.querySelector('.policy-link');
+const policyLink = document.querySelectorAll('.policy-link');
 
-policyLink.addEventListener('click', (e) => {
-  policyBlock.classList.add('show');
-  document.querySelector('.policy').onclick = (e) => {
-    if (e.target.className === 'policy__wrapper' || e.target.className === 'policy__close') {
-      policyBlock.classList.remove('show');
-    }
-  };
+policyLink.forEach((policy) => {
+  policy.addEventListener('click', (e) => {
+    policyBlock.classList.add('show');
+    document.querySelector('.policy').onclick = (e) => {
+      if (e.target.className === 'policy__wrapper' || e.target.className === 'policy__close') {
+        policyBlock.classList.remove('show');
+      }
+    };
+  });
 });
