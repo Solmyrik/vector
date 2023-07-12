@@ -80,3 +80,10 @@ policyLink.forEach((policy) => {
     };
   });
 });
+
+//video
+const video1 = document.querySelector('.video-1');
+
+setTimeout(() => {
+  video1.src = 'https://www.youtube.com/embed/EIoX2TxPtpc';
+}, 7000);
