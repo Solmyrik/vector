@@ -83,7 +83,11 @@ policyLink.forEach((policy) => {
 
 //video
 const video1 = document.querySelector('.video-1');
+const video2 = document.querySelector('.video-2');
+const video3 = document.querySelector('.video-3');
 
 setTimeout(() => {
   video1.src = 'https://www.youtube.com/embed/EIoX2TxPtpc';
+  video2.src = 'https://www.youtube.com/embed/H3tagtO7SJE';
+  video3.src = 'https://www.youtube.com/embed/5pEA65jD5ZA';
 }, 7000);
