@@ -36,8 +36,13 @@ function gallery() {
     container.addEventListener('click', (e) => {
       if (e.target.classList.contains('ibg')) {
         popup.classList.add('active');
-        document.querySelector('.gallery__popup img').src =
-          e.target.childNodes[1].getAttribute('src');
+        const index = e.target.childNodes[1].getAttribute('src').indexOf('.webp');
+        const current =
+          e.target.childNodes[1].getAttribute('src').slice(0, index) +
+          'b' +
+          e.target.childNodes[1].getAttribute('src').slice(index);
+        console.log(current);
+        document.querySelector('.gallery__popup img').src = current;
       }
     });
 
