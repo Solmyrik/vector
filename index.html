@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/png" href="img/favicon.ico" />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Вектор</title>
+    <title>Остекление веранд | Москва | Завод | ООО Векто</title>
   </head>
   <body class="">
     <div class="wrapper">
@@ -23,9 +23,9 @@
             <div class="header__menu menu">
               <div class="menu__body">
                 <ul class="menu__list">
-                  <li class="menu__item"><a href="#work" class="menu__link">Наши работы</a></li>
-                  <li class="menu__item"><a href="#quiz" class="menu__link">Стоимость</a></li>
-                  <li class="menu__item"><a href="#video" class="menu__link">Отзывы</a></li>
+                  <li class="menu__item"><a href="#2" class="menu__link">Наши работы</a></li>
+                  <li class="menu__item"><a href="#3" class="menu__link">Стоимость</a></li>
+                  <li class="menu__item"><a href="#6" class="menu__link">Отзывы</a></li>
                 </ul>
               </div>
             </div>
@@ -35,7 +35,7 @@
         </div>
       </header>
       <main class="page">
-        <section class="intro">
+        <section id="1" class="intro">
           <div class="intro__background ibg">
             <img src="img/intro/background.webp" alt="background" />
           </div>
@@ -61,7 +61,7 @@
             </div>
           </div>
         </section>
-        <section id="work" class="work">
+        <section id="2" class="work">
           <div class="work__container">
             <h2 class="work__title">Более <mark>2000</mark> проектов за <span>18 лет</span></h2>
             <div class="work__body">
@@ -424,7 +424,7 @@
             <div class="swiper-pagination"></div>
           </div>
         </section>
-        <section id="quiz" class="quiz">
+        <section id="3" class="quiz">
           <div class="quiz__background ibg">
             <img src="img/quiz/bg.webp" alt="background" />
           </div>
@@ -678,7 +678,7 @@
             </div>
           </div>
         </section>
-        <section class="reviews">
+        <section id="4" class="reviews">
           <div class="reviews__container">
             <h2 class="reviews__title">Отзывы наших <span>заказчиков</span></h2>
             <div class="reviews__top">
@@ -913,7 +913,7 @@
             </div>
           </div>
         </section>
-        <section class="about">
+        <section id="5" class="about">
           <div class="about__container">
             <div class="about__top top-about">
               <div class="top-about__background ibg">
@@ -1031,7 +1031,7 @@
             </div>
           </div>
         </section>
-        <section id="video" class="video">
+        <section id="6" class="video">
           <div class="video__container">
             <h2 class="video__title">
               Строим с <span>2005</span> года и собрали много отзывов от клиентов
@@ -1070,7 +1070,7 @@
             </div>
           </div>
         </section>
-        <section class="quize">
+        <section id="7" class="quize">
           <div class="quize__background ibg">
             <img src="img/quiz/bg.webp" alt="background" />
           </div>
@@ -1419,7 +1419,13 @@
             </h3>
             <form class="popup-form__form">
               <input type="text" class="popup-form__input popup-name" placeholder="Имя" />
-              <input type="tel" data-tel-input class="popup-form__input popup-phone" value="+7 (" />
+              <input
+                id="mytel-1"
+                type="tel"
+                data-tel-input
+                class="popup-form__input popup-phone"
+                value="+7 ("
+              />
               <button class="popup-form__button">Отправить</button>
               <div class="popup-form__label">
                 <input type="checkbox" checked class="popup-form__checkbox" />

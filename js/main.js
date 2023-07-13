@@ -91,3 +91,13 @@ setTimeout(() => {
   video2.src = 'https://www.youtube.com/embed/H3tagtO7SJE';
   video3.src = 'https://www.youtube.com/embed/5pEA65jD5ZA';
 }, 7000);
+
+////
+
+const mytelOne = document.getElementById('mytel-1');
+
+mytelOne.addEventListener('click', function () {
+  if (mytelOne.value.length === 4) {
+    mytelOne.setSelectionRange(4, 5);
+  }
+});
