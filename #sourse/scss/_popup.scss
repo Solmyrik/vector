@@ -83,6 +83,11 @@ body::after {
     }
   }
 
+  &__subtitle {
+    font-size: 27px;
+    line-height: 140%;
+  }
+
   &__form {
     display: flex;
     flex-direction: column;

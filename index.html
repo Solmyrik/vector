@@ -644,13 +644,18 @@
                 </div>
               </div>
               <div class="quiz__mobile mobile-quiz">
-                <div class="mobile-quiz__body">
+                <div class="mobile-quiz__body mobile-quiz__body_one">
                   <h3 class="mobile-quiz__name">
                     Укажите Ваш номер, за ним мы закрепим подарок или скидку до 30%.
                   </h3>
                   <form class="mobile-quiz__form">
-                    <input type="text" class="mobile-quiz__input" placeholder="Имя" />
-                    <input type="tel" data-tel-input class="mobile-quiz__input" value="+7 (" />
+                    <input type="text" class="mobile-quiz__input quiz-name" placeholder="Имя" />
+                    <input
+                      type="tel"
+                      data-tel-input
+                      class="mobile-quiz__input quiz-phone"
+                      value="+7 ("
+                    />
                     <button class="mobile-quiz__button">Отправить</button>
                     <div class="mobile-quiz__label">
                       <input type="checkbox" checked class="mobile-quiz__checkbox" />
@@ -660,6 +665,14 @@
                       </p>
                     </div>
                   </form>
+                </div>
+                <div style="display: none" class="mobile-quiz__body mobile-quiz__body_two">
+                  <h3 class="mobile-quiz__name">Ваш запрос отправлен</h3>
+                  <div class="mobile-quiz__subtitle">
+                    Наш менеджер перезвонит Вам на номер <br />
+                    <span class="mobile-quiz__number">+7 (911) 111-11-11</span> <br />в ближайшее
+                    время!
+                  </div>
                 </div>
               </div>
             </div>
@@ -1057,6 +1070,260 @@
             </div>
           </div>
         </section>
+        <section class="quize">
+          <div class="quize__background ibg">
+            <img src="img/quiz/bg.webp" alt="background" />
+          </div>
+          <div class="quize__container">
+            <div class="quize__wrapper">
+              <h2 class="quize__title">
+                Пройдите тест за <mark>1 минуту</mark> и получите расчет стоимости остекления и
+                <span>скидку до 30%</span>
+              </h2>
+              <div class="quize__body">
+                <div class="quize__decor">
+                  <img src="img/quize/sale.svg" alt="sale" />
+                </div>
+                <div class="quize__items">
+                  <div class="quize__item active">
+                    <h4 class="quize__name">Что хотите остеклить?</h4>
+                    <div class="quize__elements">
+                      <div class="quize__element">
+                        <div class="quize__radio"></div>
+                        <div class="quize__value">Террасу</div>
+                      </div>
+                      <div class="quize__element">
+                        <div class="quize__radio"></div>
+                        <div class="quize__value">Веранду</div>
+                      </div>
+                      <div class="quize__element">
+                        <div class="quize__radio"></div>
+                        <div class="quize__value">Беседку</div>
+                      </div>
+                      <div class="quize__element">
+                        <div class="quize__radio"></div>
+                        <div class="quize__value">Зимний‌ сад </div>
+                      </div>
+                      <div class="quize__element">
+                        <div class="quize__radio"></div>
+                        <div class="quize__value">Бассейн</div>
+                      </div>
+                      <div class="quize__element">
+                        <div class="quize__radio"></div>
+                        <div class="quize__value">Дом</div>
+                      </div>
+                      <div class="quize__element">
+                        <div class="quize__radio"></div>
+                        <div class="quize__value">Другое</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="quize__item">
+                    <h4 class="quize__name">Какое помещение необходимо остеклить?</h4>
+                    <div class="quize__elements">
+                      <div class="quize__element">
+                        <div class="quize__radio"></div>
+                        <div class="quize__value">Отапливаемое</div>
+                      </div>
+                      <div class="quize__element">
+                        <div class="quize__radio"></div>
+                        <div class="quize__value">Неотапливаемое</div>
+                      </div>
+                      <div class="quize__element">
+                        <div class="quize__radio"></div>
+                        <div class="quize__value">Другое</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="quize__item">
+                    <h4 class="quize__name">Из чего хотите окна?</h4>
+                    <div class="quize__elements">
+                      <div class="quize__element">
+                        <div class="quize__radio"></div>
+                        <div class="quize__value">Алюминий</div>
+                      </div>
+                      <div class="quize__element">
+                        <div class="quize__radio"></div>
+                        <div class="quize__value">Пластик</div>
+                      </div>
+                      <div class="quize__element">
+                        <div class="quize__radio"></div>
+                        <div class="quize__value">Еще не знаю</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="quize__item">
+                    <h4 class="quize__name">Какой стеклопакет хотите?</h4>
+                    <div class="quize__elements">
+                      <div class="quize__element">
+                        <div class="quize__radio"></div>
+                        <div class="quize__value">1 стекло</div>
+                      </div>
+                      <div class="quize__element">
+                        <div class="quize__radio"></div>
+                        <div class="quize__value">2 стекла</div>
+                      </div>
+                      <div class="quize__element">
+                        <div class="quize__radio"></div>
+                        <div class="quize__value">3 стекла</div>
+                      </div>
+                      <div class="quize__element">
+                        <div class="quize__radio"></div>
+                        <div class="quize__value">Еще не знаю</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="quize__item">
+                    <h4 class="quize__name">Какой цвет хотите?</h4>
+                    <div class="quize__elements">
+                      <div class="quize__element">
+                        <div class="quize__radio"></div>
+                        <div class="quize__value">Белый</div>
+                      </div>
+                      <div class="quize__element">
+                        <div class="quize__radio"></div>
+                        <div class="quize__value">Ламинария по каталогу</div>
+                      </div>
+                      <div class="quize__element">
+                        <div class="quize__radio"></div>
+                        <div class="quize__value">Покраска по RAL</div>
+                      </div>
+                      <div class="quize__element">
+                        <div class="quize__radio"></div>
+                        <div class="quize__value">Еще не знаю</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="quize__item">
+                    <h4 class="quize__name">Примерные размеры помещения?</h4>
+                    <div class="quize__elements">
+                      <div class="quize__element">
+                        <div class="quize__radio"></div>
+                        <div class="quize__value">0 — 25 кв.м.</div>
+                      </div>
+                      <div class="quize__element">
+                        <div class="quize__radio"></div>
+                        <div class="quize__value">25 — 50 кв.м.</div>
+                      </div>
+                      <div class="quize__element">
+                        <div class="quize__radio"></div>
+                        <div class="quize__value">50 — 75 кв.м.</div>
+                      </div>
+                      <div class="quize__element">
+                        <div class="quize__radio"></div>
+                        <div class="quize__value">От 75 кв.м.</div>
+                      </div>
+                      <div class="quize__element">
+                        <div class="quize__radio"></div>
+                        <div class="quize__value">Еще не знаю</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="quize__item">
+                    <h4 class="quize__name">Когда планируете начать работы?</h4>
+                    <div class="quize__elements">
+                      <div class="quize__element">
+                        <div class="quize__radio"></div>
+                        <div class="quize__value">В течение этого месяца</div>
+                      </div>
+                      <div class="quize__element">
+                        <div class="quize__radio"></div>
+                        <div class="quize__value">В следующем месяце</div>
+                      </div>
+                      <div class="quize__element">
+                        <div class="quize__radio"></div>
+                        <div class="quize__value">В конце сезона</div>
+                      </div>
+                      <div class="quize__element">
+                        <div class="quize__radio"></div>
+                        <div class="quize__value">Еще не знаю</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="quize__item">
+                    <h4 class="quize__name">Что вас интересует на данным момент?</h4>
+                    <div class="quize__elements">
+                      <div class="quize__element">
+                        <div class="quize__radio"></div>
+                        <div class="quize__value">Выезд замерщика и эскизы</div>
+                      </div>
+                      <div class="quize__element">
+                        <div class="quize__radio"></div>
+                        <div class="quize__value">Замерщик не нужен, уже есть чертежи</div>
+                      </div>
+                      <div class="quize__element">
+                        <div class="quize__radio"></div>
+                        <div class="quize__value">Консультация и ориентировочная стоимость</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="quize__item">
+                    <h4 class="quize__name">Выберите ваш подарок</h4>
+                    <div class="quize__elements">
+                      <div class="quize__element">
+                        <div class="quize__radio"></div>
+                        <div class="quize__value">Скидка до 30%</div>
+                      </div>
+                      <div class="quize__element">
+                        <div class="quize__radio"></div>
+                        <div class="quize__value">Москитные сетки</div>
+                      </div>
+                      <div class="quize__element">
+                        <div class="quize__radio"></div>
+                        <div class="quize__value">Робот мойщик окон</div>
+                      </div>
+                      <div class="quize__element">
+                        <div class="quize__radio"></div>
+                        <div class="quize__value">Подоконники на окна</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="quize__bottom">
+                  <div class="quize__line">
+                    <div class="quize__progres"></div>
+                  </div>
+                  <div class="quize__number">
+                    <span>1</span>
+                    <p>/9</p>
+                  </div>
+                </div>
+              </div>
+              <div class="quize__mobile mobile-quize">
+                <div class="mobile-quize__body mobile-quize__body_one">
+                  <h3 class="mobile-quize__name">
+                    Укажите Ваш номер, за ним мы закрепим подарок или скидку до 30%.
+                  </h3>
+                  <form class="mobile-quize__form">
+                    <input type="text" class="mobile-quize__input quize-name" placeholder="Имя" />
+                    <input
+                      type="tel"
+                      data-tel-input
+                      class="mobile-quize__input quize-phone"
+                      value="+7 ("
+                    />
+                    <button class="mobile-quize__button">Отправить</button>
+                    <div class="mobile-quize__label">
+                      <input type="checkbox" checked class="mobile-quize__checkbox" />
+                      <p>
+                        Я даю свое согласие на обработку персональных данных и соглашаюсь с
+                        <span>политикой конфиденциальности</span>
+                      </p>
+                    </div>
+                  </form>
+                </div>
+                <div style="display: none" class="mobile-quize__body mobile-quize__body_two">
+                  <h3 class="mobile-quize__name">Ваш запрос отправлен</h3>
+                  <div class="mobile-quize__subtitle">
+                    Наш менеджер перезвонит Вам на номер <br />
+                    <span class="mobile-quize__number">+7 (911) 111-11-11</span> <br />в ближайшее
+                    время!
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
       <footer class="footer">
         <div class="footer__container">
@@ -1145,14 +1412,14 @@
     <div id="popup" aria-hidden="true" class="popup">
       <div class="popup__wrapper">
         <div class="popup__content popup-form">
-          <div class="popup-form__body">
+          <div class="popup-form__body popup-form__body_one">
             <h3 class="popup-form__title">
               Получите бесплатную <br />
               консультацию
             </h3>
             <form class="popup-form__form">
-              <input type="text" class="popup-form__input" placeholder="Имя" />
-              <input type="tel" data-tel-input class="popup-form__input" value="+7 (" />
+              <input type="text" class="popup-form__input popup-name" placeholder="Имя" />
+              <input type="tel" data-tel-input class="popup-form__input popup-phone" value="+7 (" />
               <button class="popup-form__button">Отправить</button>
               <div class="popup-form__label">
                 <input type="checkbox" checked class="popup-form__checkbox" />
@@ -1162,6 +1429,16 @@
                 </p>
               </div>
             </form>
+            <div class="popup-form__close" data-close>
+              <img src="img/icons/close.svg" alt="close" />
+            </div>
+          </div>
+          <div style="display: none" class="popup-form__body popup-form__body_two">
+            <h3 class="popup-form__title">Ваш запрос отправлен</h3>
+            <div class="popup-form__subtitle">
+              Наш менеджер перезвонит Вам на номер <br />
+              <span class="popup-form__number">+7 (911) 111-11-11</span> <br />в ближайшее время!
+            </div>
             <div class="popup-form__close" data-close>
               <img src="img/icons/close.svg" alt="close" />
             </div>
@@ -1288,6 +1565,7 @@
     <script src="js/popup.js"></script>
     <script src="js/slider.js"></script>
     <script src="js/quiz.js"></script>
+    <script src="js/form.js"></script>
     <script src="js/mask.js"></script>
     <script src="js/main.js"></script>
   </body>

@@ -1,4 +1,4 @@
-.quiz {
+.quize {
   position: relative;
   height: 1081px;
   @media (max-width: $laptop) {
@@ -153,7 +153,7 @@
       margin-bottom: 20px;
     }
     &:hover {
-      .quiz__radio {
+      .quize__radio {
         background-color: $black;
       }
     }
@@ -212,7 +212,7 @@
   }
 }
 
-.mobile-quiz {
+.mobile-quize {
   &__body {
   }
 

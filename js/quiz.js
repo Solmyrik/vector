@@ -26,6 +26,8 @@ const quizStep = (e) => {
 
   currentQuestion = e.currentTarget.querySelector('.quiz__name');
 
+  if (current.className === 'quiz__elements') return;
+
   if (index <= 8) {
     if (current.classList.contains('quiz__value')) {
       currentQuestion = current.textContent;
@@ -50,4 +52,62 @@ const quizStep = (e) => {
 
 quizElements.forEach((quizContainer) => {
   quizContainer.addEventListener('click', quizStep);
+});
+
+//////////////////
+
+const quizeElements = document.querySelectorAll('.quize__item');
+const percenteItem = document.querySelector('.quize__progres');
+const quizeNumber = document.querySelector('.quize__number span');
+let indexE = 1;
+
+const stepeMibile = () => {
+  const body = document.querySelector('.quize__body');
+  const mobile = document.querySelector('.quize__mobile');
+
+  body.style.display = 'none';
+  mobile.style.display = 'block';
+};
+
+const percente = () => {
+  const heightItems = quizeElements.length;
+  let current = parseInt((100 / heightItems) * (indexE + 1));
+  percenteItem.style.width = current + '%';
+  indexE = indexE + 1;
+  quizeNumber.textContent = indexE;
+};
+
+const quizeStep = (e) => {
+  let currentAnswer = '';
+  let currentQuestion = '';
+  const current = e.target;
+
+  currentQuestion = e.currentTarget.querySelector('.quize__name');
+
+  if (current.className === 'quize__elements') return;
+
+  if (indexE <= 8) {
+    if (current.classList.contains('quize__value')) {
+      currentQuestion = current.textContent;
+    }
+
+    if (current.classList.contains('quize__radio')) {
+      currentQuestion = current.nextElementSibling.textContent;
+    }
+
+    if (current.classList.contains('quize__element')) {
+      const currentValue = current.querySelector('.quize__value');
+      currentQuestion = currentValue.textContent;
+    }
+
+    e.currentTarget.classList.remove('active');
+    e.currentTarget.nextElementSibling.classList.add('active');
+    percente();
+  } else {
+    stepeMibile();
+  }
+};
+
+quizeElements.forEach((quizContainer) => {
+  quizContainer.addEventListener('click', quizeStep);
 });
