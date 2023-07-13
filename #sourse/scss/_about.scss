@@ -285,6 +285,10 @@
     background-color: $white;
     gap: 24px;
     position: relative;
+    @media (max-width: $mobile) {
+      gap: 12px;
+      padding: 24px;
+    }
   }
 
   &__decor {
@@ -301,10 +305,14 @@
     img {
       width: 48px;
       height: 48px;
+      @media (max-width: $mobile) {
+        width: 38px;
+        height: 38px;
+      }
     }
-    @media (max-width: $mobile) {
-      display: none;
-    }
+    // @media (max-width: $mobile) {
+    //   display: none;
+    // }
   }
 
   &__texts {
