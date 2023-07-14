@@ -87,7 +87,7 @@ $light-blue: #bbcef2;
   color: #9ea1a2;
 }
 
-.gallery__popup img {
+.gallery__img {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -97,4 +97,25 @@ $light-blue: #bbcef2;
   object-fit: cover;
   max-width: 90%;
   max-height: 90%;
+}
+
+.gallery__arrow {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  z-index: 150;
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+  img {
+    top: 50%;
+    width: 40.5px;
+    height: 40.5px;
+  }
+}
+.gallery__arrow-next {
+  transform: translate(25px);
+}
+.gallery__arrow-prev {
+  transform: translate(-25px) rotate(180deg);
 }

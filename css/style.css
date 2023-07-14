@@ -162,7 +162,7 @@ html {
   color: #9ea1a2;
 }
 
-.gallery__popup img {
+.gallery__img {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -172,6 +172,32 @@ html {
   object-fit: cover;
   max-width: 90%;
   max-height: 90%;
+}
+
+.gallery__arrow {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  z-index: 150;
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+}
+
+.gallery__arrow img {
+  top: 50%;
+  width: 40.5px;
+  height: 40.5px;
+}
+
+.gallery__arrow-next {
+  -webkit-transform: translate(25px);
+          transform: translate(25px);
+}
+
+.gallery__arrow-prev {
+  -webkit-transform: translate(-25px) rotate(180deg);
+          transform: translate(-25px) rotate(180deg);
 }
 
 body::after {
@@ -791,18 +817,18 @@ main {
 }
 
 .intro__title {
-  font-size: 88px;
+  font-size: 79px;
   font-style: normal;
   font-family: 'TTBold';
   line-height: 110%;
-  max-width: 1000px;
+  max-width: 1150px;
   margin-bottom: 40px;
 }
 
 @media (max-width: 1441px) {
   .intro__title {
-    font-size: 60px;
-    max-width: 750px;
+    font-size: 55px;
+    max-width: 850px;
   }
 }
 

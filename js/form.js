@@ -7,7 +7,7 @@ function onSubmit(e) {
   const phone = document.querySelector('.popup-phone');
   const name = document.querySelector('.popup-name');
   const checkBox = document.querySelector('.popup-form__checkbox');
-  const validate = onValidate(phone.value, name.value, checkBox.checked);
+  const validate = onValidate(phone.value, checkBox.checked);
   if (validate === true) {
     const oneBody = document.querySelector('.popup-form__body_one');
     const twoBody = document.querySelector('.popup-form__body_two');
@@ -19,8 +19,8 @@ function onSubmit(e) {
   }
 }
 
-function onValidate(phone, name, checkBox) {
-  if (phone.length < 18 || name.length < 2 || checkBox === false) {
+function onValidate(phone, checkBox) {
+  if (phone.length < 18 || checkBox === false) {
     alert('Заполните форму');
     return false;
   }
@@ -36,7 +36,7 @@ function onSubmitQuiz(e) {
   const phone = document.querySelector('.quiz-phone');
   const name = document.querySelector('.quiz-name');
   const checkBox = document.querySelector('.mobile-quiz__checkbox');
-  const validate = onValidate(phone.value, name.value, checkBox.checked);
+  const validate = onValidate(phone.value, checkBox.checked);
   if (validate === true) {
     const oneBody = document.querySelector('.mobile-quiz__body_one');
     const twoBody = document.querySelector('.mobile-quiz__body_two');
@@ -59,7 +59,7 @@ function onSubmitQuize(e) {
   const phone = document.querySelector('.quize-phone');
   const name = document.querySelector('.quize-name');
   const checkBox = document.querySelector('.mobile-quize__checkbox');
-  const validate = onValidate(phone.value, name.value, checkBox.checked);
+  const validate = onValidate(phone.value, checkBox.checked);
   if (validate === true) {
     const oneBody = document.querySelector('.mobile-quize__body_one');
     const twoBody = document.querySelector('.mobile-quize__body_two');

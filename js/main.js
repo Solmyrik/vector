@@ -28,6 +28,31 @@ function ibg() {
 ibg();
 
 ////////
+const sliderArray = [
+  '1slide/1b.webp',
+  '1slide/2b.webp',
+  '1slide/3b.webp',
+  '1slide/4b.webp',
+  '2slide/1b.webp',
+  '2slide/2b.webp',
+  '2slide/3b.webp',
+  '2slide/4b.webp',
+  '3slide/1b.webp',
+  '3slide/2b.webp',
+  '3slide/3b.webp',
+  '3slide/4b.webp',
+  '4slide/1b.webp',
+  '4slide/2b.webp',
+  '4slide/3b.webp',
+  '4slide/4b.webp',
+  '5slide/1b.webp',
+  '5slide/2b.webp',
+  '5slide/3b.webp',
+  '5slide/4b.webp',
+];
+
+let indexActive = '';
+
 function gallery() {
   const container = document.querySelector('.swiper-wrapper');
   const popup = document.querySelector('.gallery__popup');
@@ -41,18 +66,47 @@ function gallery() {
           e.target.childNodes[1].getAttribute('src').slice(0, index) +
           'b' +
           e.target.childNodes[1].getAttribute('src').slice(index);
-        console.log(current);
+
+        indexActive = current;
+
         document.querySelector('.gallery__popup img').src = current;
       }
     });
 
     document.querySelector('.gallery__popup').onclick = (e) => {
+      if (e.target.className === 'img-arrow-next') {
+        GalleryNavigarion(indexActive, 'next');
+      }
+      if (e.target.className === 'img-arrow-prev') {
+        GalleryNavigarion(indexActive, 'prev');
+      }
       if (e.target.tagName !== 'IMG') {
         popup.classList.remove('active');
       }
     };
   }
 }
+
+function GalleryNavigarion(index, direction) {
+  const startIndex = index.indexOf('k/');
+  const currentItem = index.slice(startIndex + 2);
+
+  currentIndex = sliderArray.indexOf(currentItem);
+
+  if (direction === 'next' && currentIndex < sliderArray.length - 1) {
+    document.querySelector('.gallery__popup img').src = `${index.slice(0, startIndex + 2)}${
+      sliderArray[currentIndex + 1]
+    }`;
+    indexActive = `${index.slice(0, startIndex + 2)}${sliderArray[currentIndex + 1]}`;
+  }
+  if (direction === 'prev' && currentIndex > 0) {
+    document.querySelector('.gallery__popup img').src = `${index.slice(0, startIndex + 2)}${
+      sliderArray[currentIndex - 1]
+    }`;
+    indexActive = `${index.slice(0, startIndex + 2)}${sliderArray[currentIndex - 1]}`;
+  }
+}
+
 gallery();
 
 // reviews
@@ -95,9 +149,21 @@ setTimeout(() => {
 ////
 
 const mytelOne = document.getElementById('mytel-1');
+const mytelTwo = document.getElementById('mytel-2');
+const mytelThree = document.getElementById('mytel-3');
 
 mytelOne.addEventListener('click', function () {
   if (mytelOne.value.length === 4) {
     mytelOne.setSelectionRange(4, 5);
+  }
+});
+mytelTwo.addEventListener('click', function () {
+  if (mytelTwo.value.length === 4) {
+    mytelTwo.setSelectionRange(4, 5);
+  }
+});
+mytelThree.addEventListener('click', function () {
+  if (mytelThree.value.length === 4) {
+    mytelThree.setSelectionRange(4, 5);
   }
 });
