@@ -74,6 +74,9 @@ function gallery() {
     });
 
     document.querySelector('.gallery__popup').onclick = (e) => {
+      if (e.target.className === 'gallery__img') {
+        GalleryNavigarion(indexActive, 'next');
+      }
       if (e.target.className === 'img-arrow-next') {
         GalleryNavigarion(indexActive, 'next');
       }
@@ -110,15 +113,15 @@ function GalleryNavigarion(index, direction) {
 gallery();
 
 // reviews
-const reviewsAll = document.querySelector('.reviews__all');
-const reviewsItems = document.querySelectorAll('.reviews__item');
+// const reviewsAll = document.querySelector('.reviews__all');
+// const reviewsItems = document.querySelectorAll('.reviews__item');
 
-reviewsAll.addEventListener('click', (e) => {
-  reviewsItems.forEach((r) => {
-    r.classList.remove('none');
-  });
-  reviewsAll.style.display = 'none';
-});
+// reviewsAll.addEventListener('click', (e) => {
+//   reviewsItems.forEach((r) => {
+//     r.classList.remove('none');
+//   });
+//   reviewsAll.style.display = 'none';
+// });
 
 //policy
 const policyBlock = document.querySelector('.policy');
@@ -166,4 +169,9 @@ mytelThree.addEventListener('click', function () {
   if (mytelThree.value.length === 4) {
     mytelThree.setSelectionRange(4, 5);
   }
+});
+
+const telegram = document.querySelector('.bottom-about__button');
+telegram.addEventListener('click', (e) => {
+  ym(94023610, 'reachGoal', 'Lead_tg_terraces');
 });

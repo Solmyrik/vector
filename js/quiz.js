@@ -1,6 +1,8 @@
 const quizElements = document.querySelectorAll('.quiz__item');
 const percentItem = document.querySelector('.quiz__progres');
 const quizNumber = document.querySelector('.quiz__number span');
+const quizArray = [];
+const quizeArray = [];
 let index = 1;
 
 const stepMibile = () => {
@@ -24,29 +26,32 @@ const quizStep = (e) => {
   let currentQuestion = '';
   const current = e.target;
 
-  currentQuestion = e.currentTarget.querySelector('.quiz__name');
+  currentQuestion = e.currentTarget.querySelector('.quiz__name').textContent;
 
   if (current.className === 'quiz__elements') return;
 
   if (index <= 8) {
     if (current.classList.contains('quiz__value')) {
-      currentQuestion = current.textContent;
+      currentAnswer = current.textContent;
     }
 
     if (current.classList.contains('quiz__radio')) {
-      currentQuestion = current.nextElementSibling.textContent;
+      currentAnswer = current.nextElementSibling.textContent;
     }
 
     if (current.classList.contains('quiz__element')) {
       const currentValue = current.querySelector('.quiz__value');
-      currentQuestion = currentValue.textContent;
+      currentAnswer = currentValue.textContent;
     }
 
     e.currentTarget.classList.remove('active');
     e.currentTarget.nextElementSibling.classList.add('active');
+
+    quizArray.push(`${currentQuestion}: ${currentAnswer}`);
     percent();
   } else {
     stepMibile();
+    console.log(quizArray);
   }
 };
 
@@ -82,29 +87,31 @@ const quizeStep = (e) => {
   let currentQuestion = '';
   const current = e.target;
 
-  currentQuestion = e.currentTarget.querySelector('.quize__name');
+  currentQuestion = e.currentTarget.querySelector('.quize__name').textContent;
 
   if (current.className === 'quize__elements') return;
 
   if (indexE <= 8) {
     if (current.classList.contains('quize__value')) {
-      currentQuestion = current.textContent;
+      currentAnswer = current.textContent;
     }
 
     if (current.classList.contains('quize__radio')) {
-      currentQuestion = current.nextElementSibling.textContent;
+      currentAnswer = current.nextElementSibling.textContent;
     }
 
     if (current.classList.contains('quize__element')) {
       const currentValue = current.querySelector('.quize__value');
-      currentQuestion = currentValue.textContent;
+      currentAnswer = currentValue.textContent;
     }
 
     e.currentTarget.classList.remove('active');
     e.currentTarget.nextElementSibling.classList.add('active');
+    quizeArray.push(`${currentQuestion}: ${currentAnswer}`);
     percente();
   } else {
     stepeMibile();
+    console.log(quizeArray);
   }
 };
 
